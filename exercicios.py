@@ -32,37 +32,55 @@ print(ex1.split("-"))
 number_1=int(input("Digite o primeiro número: "))
 number_2=int(input("Digie o segundo núemro inteiro: "))
 resultado= number_1 + number_2
-print(f'A soma é: {resultado}')
+print(f'Ex01 - A soma é: {resultado}')
 
 # 2-Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 inf_number= int(input("Informe um número: "))
 result_info= (inf_number % 5)
-print(f'O resultado do resto da divisão por 5 é: {result_info}')
+print(f'Ex02 - O resultado do resto da divisão por 5 é: {result_info}')
 # 3-Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 inf_mult1 = float(input("Informe o primeiro número da multiplicação: "))
 inf_mult2 = float(input("Informe o segundo núemro da multiplicação: "))
 result_mult= inf_mult1 * inf_mult2
-print(f'O resultado da multificação é: {result_mult}')
+print(f'Ex03 - O resultado da multificação é: {result_mult}')
 # 4-Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 inf_div1 = int(input("Informe o primeiro número da divisão: "))
 inf_div2 = int(input("Informe o segundo número da divisão: "))
 result_div = inf_div1 // inf_div2
-print(f'O resltado entre a divisão dos núemros {inf_div1} por {inf_div2} é: {result_div}')
+print(f'Ex04 - O resltado entre a divisão dos núemros {inf_div1} por {inf_div2} é: {result_div}')
 # 5-Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
-inf_quad =  int(input("Informe o número para o calculo do seu quadrado"))
+inf_quad =  int(input("Informe o número para o calculo do seu quadrado: "))
+result_quad = inf_quad ** 2
+print(f'Ex05 - O quadrado do número {inf_quad} é: {result_quad}')
 
 # Números de Ponto Flutuante (float)
 # 6-Escreva um programa que receba dois números flutuantes e realize sua adição.
+inf_float1 = float(input("Informe o primeiro número: "))
+inf_float2 = float(input("Informe o segundo número: "))
+result_float = inf_float1 + inf_float2
+print(f'Ex06 - O resultado é: {result_float}')
 # 7-Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
 # 8-Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # 9-Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10-Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+import math
+inf_circle = float(input("Informe o raio: "))
+result_circle = math.pi * inf_circle ** 2
+area_format = "{:.2f}".format(result_circle)
+print(f"Ex10 - A área do círculo é: {area_format}")
+# forma mais recente de usar
+print(f"Ex10 - A área do círculo é: {result_circle:.2f}")
 
 # Strings (str)
 # 11-Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
 # 12-Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
 # 13-Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 # 14-Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+
+inf_date = input("Informe uma data de acordo com o padrão dd/mm/aaaa: ")
+list_date = inf_date.split("/")
+print(f'Ex14 - O dia é: {list_date[0]}, o mês: {list_date[1]} e o ano {list_date[2]}')
+
 # 15-Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
 # Booleanos (bool)
