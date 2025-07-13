@@ -34,11 +34,22 @@ number_2=int(input("Digie o segundo núemro inteiro: "))
 resultado= number_1 + number_2
 print(f'A soma é: {resultado}')
 
-
 # 2-Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+inf_number= int(input("Informe um número: "))
+result_info= (inf_number % 5)
+print(f'O resultado do resto da divisão por 5 é: {result_info}')
 # 3-Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+inf_mult1 = float(input("Informe o primeiro número da multiplicação: "))
+inf_mult2 = float(input("Informe o segundo núemro da multiplicação: "))
+result_mult= inf_mult1 * inf_mult2
+print(f'O resultado da multificação é: {result_mult}')
 # 4-Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+inf_div1 = int(input("Informe o primeiro número da divisão: "))
+inf_div2 = int(input("Informe o segundo número da divisão: "))
+result_div = inf_div1 // inf_div2
+print(f'O resltado entre a divisão dos núemros {inf_div1} por {inf_div2} é: {result_div}')
 # 5-Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+inf_quad =  int(input("Informe o número para o calculo do seu quadrado"))
 
 # Números de Ponto Flutuante (float)
 # 6-Escreva um programa que receba dois números flutuantes e realize sua adição.
